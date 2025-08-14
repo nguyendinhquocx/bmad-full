@@ -1,835 +1,853 @@
-# 🇻🇳 BMad Method - Hướng Dẫn Toàn Diện Tiếng Việt
+# BMad Method - Hướng Dẫn Toàn Diện Bằng Tiếng Việt
 
-> **Phương pháp phát triển phần mềm hiện đại với sự hỗ trợ của AI Agents chuyên nghiệp**
+> **Phương pháp phát triển phần mềm hiện đại với sự hỗ trợ của 7 chuyên gia AI**
 
----
+## **Mục Lục**
 
-## 📋 **Mục Lục**
-
-- [🎯 Section 1: Tổng Quan BMad Method](#-section-1-tổng-quan-bmad-method)
-- [🚀 Section 2: Workflow Từ Ý Tưởng → Sản Phẩm](#-section-2-workflow-từ-ý-tưởng--sản-phẩm)  
-- [🔧 Section 3: Các Scenarios Thực Tế](#-section-3-các-scenarios-thực-tế)
-- [📖 Section 4: Cầm Tay Chỉ Việc](#-section-4-cầm-tay-chỉ-việc)
-- [🎯 Section 5: Ví Dụ Thực Tế - Todo App + Trello](#-section-5-ví-dụ-thực-tế---todo-app--trello)
+- [Section 1: Tổng Quan BMad Method](#section-1-tổng-quan-bmad-method)
+- [Section 2: Workflow Từ Ý Tưởng đến Sản Phẩm](#section-2-workflow-từ-ý-tưởng-đến-sản-phẩm)  
+- [Section 3: Các Tình Huống Thực Tế](#section-3-các-tình-huống-thực-tế)
+- [Section 4: Hướng Dẫn Từng Bước Chi Tiết](#section-4-hướng-dẫn-từng-bước-chi-tiết)
+- [Section 5: Ví Dụ Thực Tế - Xây Dựng Todo App](#section-5-ví-dụ-thực-tế---xây-dựng-todo-app)
 
 ---
 
-## 🎯 **Section 1: Tổng Quan BMad Method**
+## **Section 1: Tổng Quan BMad Method**
 
 ### **BMad Method là gì?**
 
-BMad Method là một phương pháp phát triển phần mềm hiện đại kết hợp:
-- **Agile principles** - Phát triển linh hoạt, iterative
-- **AI-powered agents** - 7 chuyên gia AI hỗ trợ từng giai đoạn
-- **Document-driven development** - Tài liệu là trung tâm workflow
-- **Context management** - Agents nhớ context qua các sessions
+BMad Method là một phương pháp phát triển phần mềm kết hợp:
 
-### **Tại sao nên sử dụng BMad Method?**
+- **Agile principles** - Phát triển linh hoạt theo từng giai đoạn nhỏ
+- **7 AI agents chuyên nghiệp** - Mỗi agent phụ trách một công việc cụ thể
+- **Document-driven development** - Tất cả thông tin được lưu trong tài liệu
+- **Context persistence** - Agents nhớ được công việc dù bạn tắt máy
 
-#### **✅ Ưu điểm vượt trội:**
+### **Tại sao nên dùng BMad Method?**
 
-1. **Structured Workflow** - Quy trình rõ ràng từ ý tưởng → code
-2. **Role Specialization** - Mỗi agent chuyên về 1 lĩnh vực cụ thể  
-3. **Consistency** - Templates đảm bảo output đồng nhất
-4. **Scalability** - Có thể handle từ project nhỏ đến enterprise
-5. **Context Persistence** - Agents nhớ công việc qua nhiều sessions
-6. **Quality Assurance** - Built-in review và testing workflow
+**Ưu điểm so với cách làm thông thường:**
 
-#### **📊 So sánh với các phương pháp khác:**
+1. **Có quy trình rõ ràng** - Không bị lạc hướng, biết làm gì tiếp theo
+2. **Mỗi agent chuyên về một việc** - Chất lượng cao, không bị lẫn lộn
+3. **Kết quả đồng nhất** - Dùng templates chuẩn, không bị sai lệch
+4. **Nhớ được context** - Agent biết bạn đang làm gì dù tắt máy
+5. **Có quality assurance** - Luôn có người review code trước khi hoàn thành
 
-| **Aspect** | **BMad Method** | **Traditional Agile** | **Solo AI Agent** |
-|------------|-----------------|----------------------|-------------------|
-| **Structure** | ✅ Highly structured | ⚠️ Varies by team | ❌ Ad-hoc |
-| **Consistency** | ✅ Template-driven | ⚠️ Team dependent | ❌ Variable quality |
-| **Context Management** | ✅ Document-based persistence | ❌ Memory dependent | ❌ Single session |
-| **Role Clarity** | ✅ 7 specialized agents | ⚠️ Human roles overlap | ❌ One agent does all |
-| **Scalability** | ✅ Scales with complexity | ⚠️ Team dependent | ❌ Limited context |
+**So sánh với các cách khác:**
 
-### **Khi nào nên sử dụng BMad Method?**
+| **Đặc điểm** | **BMad Method** | **AI thông thường** | **Làm thủ công** |
+|------------|-----------------|---------------------|------------------|
+| **Quy trình** | Có cấu trúc rõ ràng | Tùy hứng | Tùy kinh nghiệm |
+| **Chất lượng** | Đồng nhất | Không ổn định | Tùy người |
+| **Nhớ context** | Lưu trong file | Quên khi tắt | Phải ghi chép |
+| **Phân công** | Rõ ràng từng vai trò | Một AI làm hết | Một người làm hết |
 
-#### **✅ Nên dùng khi:**
-- Projects phức tạp (3+ weeks development)
-- Cần tài liệu chi tiết và maintainable  
-- Team development hoặc long-term maintenance
-- Muốn code quality cao và consistent
-- Dự án có khả năng scale up sau này
+### **Khi nào nên dùng BMad Method?**
 
-#### **❌ Không cần khi:**
-- Quick prototypes (< 1 week)
-- One-off scripts hoặc tools đơn giản
-- Learning projects cá nhân
-- Chỉ cần proof of concept
+**Nên dùng khi:**
+- Dự án mất từ 3 tuần trở lên
+- Cần tài liệu chi tiết để bảo trì sau này
+- Làm việc nhóm hoặc cần maintain lâu dài  
+- Muốn code chất lượng cao
+- Dự án có khả năng mở rộng sau này
 
-### **7 AI Agents Chuyên Nghiệp**
+**Không cần dùng khi:**
+- Làm prototype nhanh trong vài ngày
+- Script đơn giản một lần dùng
+- Học code cá nhân
+- Chỉ cần chứng minh ý tưởng
 
-| **Agent** | **Tên** | **Chuyên Môn** | **Khi Nào Sử Dụng** |
-|-----------|---------|----------------|---------------------|
-| **📊 Analyst** | **Cô Mai** | Market research, brainstorming, competitor analysis | Giai đoạn research ý tưởng |
-| **📋 PM** | **Anh Huy** | PRD creation, product strategy, requirements | Tạo tài liệu sản phẩm |
-| **🎨 UX Expert** | **Chị Lan** | UI/UX design, user research, wireframes | Thiết kế trải nghiệm người dùng |
-| **🏗️ Architect** | **Anh Kiến** | System design, tech stack, architecture | Thiết kế hệ thống |
-| **🏃 SM** | **Anh Minh** | Story creation, sprint planning, Agile process | Quản lý stories và sprints |
-| **📝 PO** | **Chị Linh** | Backlog management, validation, document sharding | Validation và organization |
-| **💻 Dev** | **Anh Tuấn** | Code implementation, testing, debugging | Lập trình thực tế |
-| **🧪 QA** | **Anh Quang** | Code review, refactoring, quality assurance | Đảm bảo chất lượng |
+### **7 Chuyên Gia AI Trong Team**
+
+**Analyst - Cô Mai:** Chuyên nghiên cứu
+- Nghiên cứu thị trường, phân tích đối thủ
+- Brainstorming ý tưởng
+- Tạo project brief từ ý tưởng ban đầu
+
+**Product Manager - Anh Huy:** Quản lý sản phẩm  
+- Tạo PRD (Product Requirements Document)
+- Định nghĩa tính năng và yêu cầu
+- Lập kế hoạch phát triển
+
+**UX Expert - Chị Lan:** Thiết kế trải nghiệm
+- Thiết kế giao diện người dùng
+- Tạo wireframe và user flow
+- Tối ưu trải nghiệm người dùng
+
+**Scrum Master - Anh Minh:** Quản lý quy trình
+- Tạo user stories từ PRD
+- Lập kế hoạch sprint
+- Quản lý backlog
+
+**Product Owner - Chị Linh:** Kiểm tra chất lượng
+- Validate tài liệu và stories
+- Chia nhỏ tài liệu lớn
+- Đảm bảo tính nhất quán
+
+**Developer - Anh Tuấn:** Lập trình viên
+- Code tính năng theo user stories
+- Viết test cases
+- Debug và fix lỗi
+
+**QA Engineer - Anh Quang:** Kiểm tra chất lượng code
+- Review code như senior developer
+- Refactor code để tốt hơn
+- Đảm bảo coding standards
 
 ---
 
-## 🚀 **Section 2: Workflow Từ Ý Tưởng → Sản Phẩm**
+## **Section 2: Workflow Từ Ý Tưởng đến Sản Phẩm**
 
-### **🎯 Overview: 2-Phase Workflow**
+### **Quy trình 2 giai đoạn**
 
 BMad Method chia làm 2 giai đoạn chính:
 
-```mermaid
-graph LR
-    A[💡 Ý Tưởng] --> B[📋 Planning Phase]
-    B --> C[💻 Development Phase]  
-    C --> D[🚀 Sản Phẩm]
-    
-    style B fill:#e3f2fd
-    style C fill:#f3e5f5
-```
+**Giai đoạn 1: Lập Kế Hoạch (Planning)**
+- Nghiên cứu ý tưởng
+- Tạo tài liệu yêu cầu
+- Thiết kế hệ thống
+- Chuẩn bị user stories
 
-### **📋 Phase 1: Planning (Trên Web hoặc IDE)**
+**Giai đoạn 2: Phát Triển (Development)**  
+- Code từng tính năng
+- Test và review
+- Deploy sản phẩm
 
-#### **Bước 1: Research & Analysis**
-```
-💡 Ý tưởng → 📊 /analyst → Project Brief
-```
-- **Input:** Ý tưởng ban đầu
-- **Process:** Market research, competitor analysis
-- **Output:** Project Brief document
-- **Thời gian:** 30-60 phút
+### **Giai đoạn 1: Lập Kế Hoạch**
 
-#### **Bước 2: Product Requirements**  
+**Bước 1: Nghiên cứu ý tưởng (30-60 phút)**
 ```
-📋 Project Brief → 📋 /pm → PRD Complete
+Ý tưởng → /analyst → Project Brief
 ```
-- **Input:** Project Brief  
-- **Process:** Create PRD với FRs, NFRs, Epics, Stories
+- **Input:** Ý tưởng ban đầu của bạn
+- **Công việc:** Nghiên cứu thị trường, phân tích đối thủ
+- **Output:** Tài liệu mô tả dự án (Project Brief)
+
+**Bước 2: Tạo yêu cầu sản phẩm (1-2 tiếng)**
+```
+Project Brief → /pm → PRD Complete
+```
+- **Input:** Project Brief từ bước 1
+- **Công việc:** Tạo PRD với tính năng, yêu cầu kỹ thuật, user stories
 - **Output:** Product Requirements Document
-- **Thời gian:** 1-2 giờ
 
-#### **Bước 3: UX Design (Optional)**
+**Bước 3: Thiết kế UX (1-3 tiếng, tùy chọn)**
 ```
-📋 PRD → 🎨 /ux-expert → UI/UX Specs
+PRD → /ux-expert → UI/UX Specifications
 ```
-- **Input:** PRD requirements
-- **Process:** UI/UX design, wireframes, user flows
-- **Output:** Front-end specifications
-- **Thời gian:** 1-3 giờ (tùy complexity)
+- **Input:** Yêu cầu từ PRD
+- **Công việc:** Thiết kế giao diện, wireframe, user flow
+- **Output:** Tài liệu thiết kế frontend
 
-#### **Bước 4: System Architecture**
+**Bước 4: Thiết kế hệ thống (1-2 tiếng)**
 ```
-📋 PRD + 🎨 UX Specs → 🏗️ /architect → Architecture
-```
-- **Input:** PRD + UX specifications  
-- **Process:** Tech stack, system design, patterns
-- **Output:** Architecture document
-- **Thời gian:** 1-2 giờ
+PRD + UX Specs → /architect → Architecture Document
+```  
+- **Input:** PRD và tài liệu UX
+- **Công việc:** Chọn công nghệ, thiết kế database, API
+- **Output:** Tài liệu kiến trúc hệ thống
 
-#### **Bước 5: Validation & Sharding**
+**Bước 5: Kiểm tra và chuẩn bị (30 phút)**
 ```
-📋📋📋 All Docs → 📝 /po → Validated & Sharded
+All Documents → /po → Ready for Development
 ```
-- **Input:** PRD + Architecture + UX specs
-- **Process:** Master checklist, document sharding
-- **Output:** Ready-to-develop documents
-- **Thời gian:** 30 phút
+- **Input:** Tất cả tài liệu từ các bước trước
+- **Công việc:** Kiểm tra tính đầy đủ, chia nhỏ tài liệu
+- **Output:** Tài liệu sẵn sàng để code
 
-### **💻 Phase 2: Development (Trong IDE)**
+### **Giai đoạn 2: Phát Triển**
 
-#### **Development Cycle Loop:**
+**Chu trình lặp lại cho từng tính năng:**
 
-```mermaid
-graph TD
-    A[🏃 SM: Create Story] --> B[📝 PO: Validate Story]
-    B --> C[💻 Dev: Implement Story]
-    C --> D[🧪 QA: Review & Refactor]
-    D --> E{Story Complete?}
-    E -->|Yes| F[✅ Story Done]
-    E -->|No| C
-    F --> G{More Stories?}
-    G -->|Yes| A
-    G -->|No| H[🚀 Project Complete]
+**Bước 1: Tạo User Story**
 ```
-
-#### **Bước 1: Story Creation**
+PRD → /sm → Detailed User Story
 ```
-📋 Sharded Docs → 🏃 /sm → User Stories
-```
-- **Input:** Epic từ PRD + Architecture guidance
-- **Process:** Tạo detailed user stories với acceptance criteria
-- **Output:** Ready-to-implement stories
-- **Frequency:** Mỗi sprint/iteration
+- Anh Minh đọc PRD và tạo story chi tiết
+- Mỗi story bao gồm: mô tả, acceptance criteria, tasks
 
-#### **Bước 2: Story Validation**  
+**Bước 2: Kiểm tra Story**
 ```
-📝 Draft Story → 📝 /po → Validated Story
+Draft Story → /po → Validated Story  
 ```
-- **Input:** Story draft từ SM
-- **Process:** Kiểm tra completeness, dependencies, clarity
-- **Output:** Approved story ready cho development
-- **Frequency:** Trước mỗi story implementation
+- Chị Linh kiểm tra story có đủ thông tin không
+- Đảm bảo story phù hợp với PRD
 
-#### **Bước 3: Implementation**
+**Bước 3: Lập trình**
 ```
-✅ Approved Story → 💻 /dev → Working Code + Tests
+Validated Story → /dev → Working Code + Tests
 ```
-- **Input:** Validated user story
-- **Process:** Code implementation, unit tests, integration
-- **Output:** Feature complete với tests passing
-- **Frequency:** Liên tục trong development
+- Anh Tuấn đọc story và code từng task
+- Viết test cases và chạy thử
+- Cập nhật tiến độ vào story file
 
-#### **Bước 4: Quality Review**
+**Bước 4: Review chất lượng**
 ```
-💻 Code Complete → 🧪 /qa → Production Ready
+Completed Code → /qa → Production Ready
 ```
-- **Input:** Implemented code từ Dev
-- **Process:** Senior code review, refactoring, additional tests
-- **Output:** Production-quality code
-- **Frequency:** Sau mỗi story implementation
+- Anh Quang review code như senior
+- Refactor code để tốt hơn
+- Đảm bảo coding standards
 
-### **📊 Timeline Estimate**
+**Lặp lại chu trình này cho đến khi hoàn thành tất cả tính năng**
 
-#### **Small Project (1-2 features):**
-- Planning: 2-4 giờ
-- Development: 1-2 tuần  
-- Total: 1-2 tuần
+### **Ước tính thời gian**
 
-#### **Medium Project (5-10 features):**
-- Planning: 4-8 giờ
-- Development: 3-6 tuần
-- Total: 1-2 tháng
+**Dự án nhỏ (1-2 tính năng):**
+- Lập kế hoạch: 2-4 tiếng
+- Phát triển: 1-2 tuần  
+- Tổng cộng: 1-2 tuần
 
-#### **Large Project (20+ features):**
-- Planning: 1-2 ngày
-- Development: 2-6 tháng
-- Total: 3-6 tháng
+**Dự án trung bình (5-10 tính năng):**
+- Lập kế hoạch: 4-8 tiếng
+- Phát triển: 3-6 tuần
+- Tổng cộng: 1-2 tháng
+
+**Dự án lớn (20+ tính năng):**
+- Lập kế hoạch: 1-2 ngày
+- Phát triển: 2-6 tháng  
+- Tổng cộng: 3-6 tháng
 
 ---
 
-## 🔧 **Section 3: Các Scenarios Thực Tế**
+## **Section 3: Các Tình Huống Thực Tế**
 
-### **🌱 Scenario 1: Greenfield Project (Dự án mới)**
+### **Tình huống 1: Làm dự án mới từ đầu**
 
-> **Tình huống:** Bạn có ý tưởng app mới, bắt đầu từ con số 0
+**Khi nào:** Bạn có ý tưởng mới, chưa có code gì
 
-#### **Workflow:**
+**Quy trình:**
 ```
-💡 Ý tưởng → 📊 Analysis → 📋 PRD → 🎨 UX → 🏗️ Architecture → 🏃 Stories → 💻 Code → 🚀 Deploy
+Ý tưởng → Nghiên cứu → Tạo PRD → Thiết kế UX → Kiến trúc → Code → Deploy
 ```
 
-#### **Commands sequence:**
+**Các lệnh cần dùng:**
 ```bash
-# Step 1: Research ý tưởng
+# Bước 1: Nghiên cứu ý tưởng
 /analyst
 *create-project-brief
 
-# Step 2: Tạo PRD  
-/pm
+# Bước 2: Tạo PRD
+/pm  
 *create-prd
 
-# Step 3: UX Design (if needed)
-/ux-expert  
+# Bước 3: Thiết kế UX (nếu cần)
+/ux-expert
 *create-front-end-spec
 
-# Step 4: System Architecture
+# Bước 4: Thiết kế hệ thống  
 /architect
 *create-architecture
 
-# Step 5: Validate & Shard
+# Bước 5: Chuẩn bị development
 /po
 *execute-checklist-po
 *shard-doc docs/prd.md docs/prd
 *shard-doc docs/architecture.md docs/architecture
 
-# Step 6: Development Loop
-/sm → *draft (create stories)
-/dev → *develop-story (implement)  
-/qa → *review (quality check)
+# Bước 6: Chu trình development
+/sm → *draft (tạo stories)
+/dev → *develop-story (code) 
+/qa → *review (kiểm tra)
 ```
 
-#### **Thời gian:** 
-- Planning: 4-8 giờ
-- Development: Tùy scope (1 tuần - 6 tháng)
+**Thời gian:** Lập kế hoạch 4-8 tiếng, phát triển tùy scope
 
----
+### **Tình huống 2: Nâng cấp dự án có sẵn**
 
-### **🏗️ Scenario 2: Brownfield Project (Nâng cấp dự án có sẵn)**
+**Khi nào:** Bạn có app/website rồi, muốn thêm tính năng
 
-> **Tình huống:** Bạn có app/website existing, muốn thêm features mới
+**Đặc điểm:**
+- Code đã có sẵn  
+- Kiến trúc đã định hình
+- Cần tích hợp với hệ thống hiện tại
 
-#### **Đặc điểm:**
-- Code base đã có sẵn
-- Architecture đã định hình
-- Cần integrate với existing systems
-
-#### **Workflow:**
+**Quy trình:**
 ```
-📋 Existing App → 📊 Analysis → 📝 Epic Creation → 🏃 Stories → 💻 Code → 🚀 Deploy  
+App hiện tại → Phân tích → Tạo epic mới → Code → Deploy
 ```
 
-#### **Commands sequence:**
+**Các lệnh cần dùng:**
 ```bash
-# Step 1: Document existing system  
+# Bước 1: Phân tích hệ thống hiện tại
 /analyst
 *document-project
 
-# Step 2: Create new epic
-/pm  
+# Bước 2: Tạo epic cho tính năng mới
+/pm
 *create-brownfield-epic
 
-# Step 3: Validate against existing
-/po
+# Bước 3: Kiểm tra tính khả thi
+/po  
 *validate-story-draft
 
-# Step 4: Development
-/sm → *draft  
-/dev → *develop-story
+# Bước 4: Development
+/sm → *draft
+/dev → *develop-story  
 /qa → *review
 ```
 
-#### **Thời gian:**
-- Analysis: 2-4 giờ
-- Development: Nhanh hơn greenfield (20-50%)
+**Thời gian:** Nhanh hơn làm mới 20-50%
 
----
+### **Tình huống 3: Sửa lỗi và bảo trì**
 
-### **🐛 Scenario 3: Bug Fixing & Maintenance**
+**Khi nào:** App có bug cần fix hoặc cần tối ưu performance
 
-> **Tình huống:** App có bugs cần fix hoặc performance issues
-
-#### **Workflow:**
+**Quy trình:**
 ```
-🐛 Bug Report → 🏃 Story Creation → 💻 Fix Implementation → 🧪 QA Review → ✅ Deploy
+Bug report → Tạo story sửa lỗi → Code fix → Review → Deploy
 ```
 
-#### **Commands sequence:**
+**Các lệnh cần dùng:**
 ```bash
-# Step 1: Create bug fix story
+# Bước 1: Tạo story mô tả bug
 /sm
-*draft  # Tạo story mô tả bug + fix approach
+*draft  # Mô tả bug và cách fix
 
-# Step 2: Implement fix
-/dev  
-*develop-story  # Fix bug + add tests
+# Bước 2: Code fix
+/dev
+*develop-story  # Fix lỗi và viết test
 
-# Step 3: Senior review
+# Bước 3: Review kỹ lưỡng  
 /qa
-*review  # Ensure fix không break other features
+*review  # Đảm bảo fix không gây lỗi khác
 ```
 
-#### **Thời gian:** 
-- Simple bugs: 2-4 giờ
-- Complex issues: 1-3 ngày
+**Thời gian:** Bug đơn giản 2-4 tiếng, phức tạp 1-3 ngày
 
----
+### **Tình huống 4: Cải tiến tính năng**
 
-### **⚡ Scenario 4: Feature Enhancement**
+**Khi nào:** Muốn làm tính năng hiện tại tốt hơn hoặc tăng performance
 
-> **Tình huống:** Improve existing feature hoặc optimize performance
-
-#### **Workflow:**
+**Quy trình:**  
 ```
-📊 Analysis → 📋 Enhancement Plan → 💻 Implementation → 🧪 QA → 🚀 Deploy
+Phân tích hiện trạng → Lập kế hoạch cải tiến → Code → Deploy
 ```
 
-#### **Commands sequence:**
+**Các lệnh cần dùng:**
 ```bash
-# Step 1: Analyze current state
-/analyst
-*brainstorm {feature-improvement}
+# Bước 1: Phân tích tình trạng hiện tại
+/analyst  
+*brainstorm "cải tiến tính năng X"
 
-# Step 2: Plan enhancement  
+# Bước 2: Lập kế hoạch cải tiến
 /pm
 *create-brownfield-story
 
-# Step 3: Implement improvement
+# Bước 3: Thực hiện cải tiến
 /dev
 *develop-story
 
-# Step 4: Quality review
-/qa  
-*review  # Ensure performance gains
+# Bước 4: Kiểm tra hiệu quả
+/qa
+*review  # Đảm bảo cải tiến đạt mục tiêu
 ```
 
-#### **Thời gian:**
-- Minor enhancements: 4-8 giờ
-- Major improvements: 1-2 tuần
+**Thời gian:** Cải tiến nhỏ 4-8 tiếng, lớn 1-2 tuần
 
----
+### **Tình huống 5: Phát triển liên tục**
 
-### **🔄 Scenario 5: Continuous Development**
+**Khi nào:** Dự án dài hạn với nhiều releases theo kế hoạch
 
-> **Tình huống:** Long-term project với regular releases
-
-#### **Workflow:**
+**Chu trình hàng tháng:**
 ```
-Sprint Planning → Story Implementation → QA Review → Release → Retrospective → Repeat
+Sprint planning → Development → QA → Release → Retrospective
 ```
 
-#### **Monthly cycle:**
-```bash
-# Week 1: Sprint Planning
+**Quy trình chi tiết:**
+```bash  
+# Tuần 1: Lập kế hoạch sprint
 /po → *execute-checklist-po
-/sm → *draft (multiple stories for sprint)
+/sm → *draft  # Tạo nhiều stories cho sprint
 
-# Week 2-3: Development  
-/dev → *develop-story (story 1)
-/qa → *review  
-/dev → *develop-story (story 2)
+# Tuần 2-3: Development
+/dev → *develop-story  # Story 1
+/qa → *review
+/dev → *develop-story  # Story 2  
 /qa → *review
 
-# Week 4: Release & Retrospective
-/po → validation & documentation
-Deploy to production
-/sm → retrospective & planning next sprint
+# Tuần 4: Release và tổng kết
+/po → validation và documentation
+Deploy lên production
+/sm → retrospective và plan sprint tiếp
 ```
 
-#### **Benefits:**
-- Predictable delivery schedule
-- Continuous quality improvement  
-- Regular stakeholder feedback
-- Sustainable development pace
+**Lợi ích:** 
+- Tiến độ đều đặn có thể dự đoán
+- Chất lượng được cải thiện liên tục
+- Feedback thường xuyên từ user
+- Nhịp độ phát triển bền vững
 
 ---
 
-## 📖 **Section 4: Cầm Tay Chỉ Việc**
+## **Section 4: Hướng Dẫn Từng Bước Chi Tiết**
 
-### **🚀 Getting Started**
+### **Bắt đầu sử dụng BMad Method**
 
-#### **Bước 1: Setup Project**
-```bash
+**Bước 1: Cài đặt**
+```bash  
 # Tạo project mới
-mkdir my-awesome-project
-cd my-awesome-project
+mkdir du-an-cua-toi
+cd du-an-cua-toi
 
-# Install BMad Method
+# Cài đặt BMad Method
 npx bmad-method install
 
-# Hoặc copy từ existing project
+# Hoặc copy từ project có sẵn
 cp -r /path/to/bmad-project/.bmad-core .
 cp -r /path/to/bmad-project/.claude .
 ```
 
-#### **Bước 2: Verify Installation**
+**Bước 2: Kiểm tra cài đặt**
 ```bash
-# Check agents có hoạt động không
-/analyst  # Should greet "Xin chào! Tôi là Cô Mai..."
+# Test các agent có hoạt động không
+/analyst  # Phải hiện "Xin chào! Tôi là Cô Mai..."
 *exit
 
-/pm       # Should greet "Xin chào! Tôi là Anh Huy..."  
+/pm       # Phải hiện "Xin chào! Tôi là Anh Huy..."
 *exit
 ```
 
-#### **Bước 3: Configure Project**
+**Bước 3: Cấu hình project**
 ```bash
-# Edit core config
+# Chỉnh sửa config chính
 nano .bmad-core/core-config.yaml
 
-# Customize technical preferences  
+# Tùy chỉnh technical preferences
 nano .bmad-core/data/technical-preferences.md
 ```
 
-### **📋 Commands Reference**
+### **Các lệnh cơ bản theo từng agent**
 
-#### **🔍 Discovery Commands:**
+**Analyst - Cô Mai (Nghiên cứu):**
 
-##### **📊 Analyst (Cô Mai):**
+Để vào chế độ Analyst:
 ```bash
 /analyst
-*help                           # Show all commands
-*create-project-brief          # Tạo project brief từ ý tưởng
-*perform-market-research       # Nghiên cứu thị trường  
-*create-competitor-analysis    # Phân tích đối thủ
-*brainstorm {topic}           # Brainstorming session
-*research-prompt {topic}      # Tạo research prompts
-*exit                         # Thoát
 ```
 
-**Example Usage:**
+Các lệnh có thể dùng:
+```bash
+*help                           # Hiện tất cả lệnh có sẵn
+*create-project-brief          # Tạo tài liệu mô tả dự án từ ý tưởng
+*perform-market-research       # Nghiên cứu thị trường cho sản phẩm
+*create-competitor-analysis    # Phân tích các đối thủ cạnh tranh  
+*brainstorm "chủ đề"          # Brainstorming về chủ đề cụ thể
+*research-prompt "chủ đề"     # Tạo câu hỏi nghiên cứu sâu
+*exit                         # Thoát khỏi chế độ Analyst
+```
+
+**Ví dụ sử dụng:**
 ```bash
 /analyst
-*brainstorm "Todo app with AI features"
-# → Cô Mai sẽ facilitate brainstorming session
-# → Output: List of features, user personas, market opportunities
+*brainstorm "app todo có AI"
+# Cô Mai sẽ hướng dẫn brainstorming session
+# Kết quả: Danh sách tính năng, user personas, cơ hội thị trường
 
-*create-project-brief  
-# → Interactive process tạo project brief
-# → Output: docs/project-brief.md
+*create-project-brief
+# Quy trình tương tác tạo project brief  
+# Kết quả: File docs/project-brief.md
 ```
 
-##### **📋 Product Manager (Anh Huy):**
+**Product Manager - Anh Huy (Quản lý sản phẩm):**
+
+Để vào chế độ PM:
 ```bash
-/pm  
-*help                          # Show all commands
+/pm
+```
+
+Các lệnh có thể dùng:
+```bash
+*help                          # Hiện tất cả lệnh có sẵn
 *create-prd                   # Tạo Product Requirements Document
-*create-brownfield-prd        # PRD cho dự án có sẵn  
-*shard-prd                    # Chia PRD thành files nhỏ
+*create-brownfield-prd        # Tạo PRD cho dự án có sẵn
+*shard-prd                    # Chia PRD thành nhiều file nhỏ
 *create-epic                  # Tạo epic mới
 *create-story                 # Tạo user story
-*correct-course               # Điều chỉnh direction
-*yolo                         # Toggle fast mode
-*exit                         # Thoát
+*correct-course               # Điều chỉnh hướng dự án
+*yolo                         # Bật chế độ nhanh (bỏ qua confirmations)
+*exit                         # Thoát khỏi chế độ PM
 ```
 
-**Example Usage:**
+**Ví dụ sử dụng:**  
 ```bash
 /pm
 *create-prd
-# → Interactive PRD creation process
-# → Hỏi về goals, requirements, features
-# → Output: docs/prd.md
+# Quy trình tương tác tạo PRD
+# Hỏi về mục tiêu, yêu cầu, tính năng
+# Kết quả: File docs/prd.md
 
-*shard-prd
-# → Chia PRD thành multiple files  
-# → Output: docs/prd/goals.md, docs/prd/features.md, etc.
+*shard-prd  
+# Chia PRD thành nhiều file nhỏ
+# Kết quả: docs/prd/goals.md, docs/prd/features.md, v.v.
 ```
 
-#### **🎨 Design Commands:**
+**UX Expert - Chị Lan (Thiết kế UX):**
 
-##### **🎨 UX Expert (Chị Lan):**
+Để vào chế độ UX Expert:
 ```bash
 /ux-expert
-*help                          # Show all commands  
-*create-front-end-spec        # Tạo front-end specification
-*generate-ui-prompt           # Tạo AI UI generation prompts
-*exit                         # Thoát
 ```
 
-**Example Usage:**
+Các lệnh có thể dùng:
 ```bash
-/ux-expert  
+*help                          # Hiện tất cả lệnh có sẵn
+*create-front-end-spec        # Tạo tài liệu thiết kế frontend
+*generate-ui-prompt           # Tạo prompts cho AI tạo UI
+*exit                         # Thoát khỏi chế độ UX Expert
+```
+
+**Ví dụ sử dụng:**
+```bash
+/ux-expert
 *create-front-end-spec
-# → Interactive UX design process
-# → Output: docs/frontend-spec.md with wireframes, user flows
+# Quy trình thiết kế UX tương tác
+# Kết quả: docs/frontend-spec.md với wireframes, user flows
 
 *generate-ui-prompt
-# → Tạo prompts cho v0.dev hoặc Lovable
-# → Output: Optimized prompts cho AI UI tools
+# Tạo prompts tối ưu cho v0.dev hoặc Lovable
+# Kết quả: Prompts chất lượng cao cho AI tạo UI
 ```
 
-#### **🏗️ Development Commands:**
+**Scrum Master - Anh Minh (Quản lý quy trình):**
 
-##### **🏃 Scrum Master (Anh Minh):**
+Để vào chế độ Scrum Master:
 ```bash
 /sm
-*help                          # Show all commands
-*draft                        # Tạo story tiếp theo từ epic  
-*correct-course               # Điều chỉnh hướng dự án
-*story-checklist             # Kiểm tra story quality
-*exit                         # Thoát
 ```
 
-**Example Usage:**
+Các lệnh có thể dùng:
+```bash
+*help                          # Hiện tất cả lệnh có sẵn
+*draft                        # Tạo user story tiếp theo từ epic
+*correct-course               # Điều chỉnh hướng dự án
+*story-checklist             # Kiểm tra chất lượng story
+*exit                         # Thoát khỏi chế độ SM
+```
+
+**Ví dụ sử dụng:**
 ```bash
 /sm
 *draft
-# → Đọc PRD và architecture
-# → Tạo detailed user story với acceptance criteria
-# → Output: docs/stories/story-1-1.md
+# Đọc PRD và architecture
+# Tạo user story chi tiết với acceptance criteria
+# Kết quả: docs/stories/story-1-1.md
 ```
 
-##### **📝 Product Owner (Chị Linh):**  
-```bash
+**Product Owner - Chị Linh (Kiểm tra chất lượng):**
+
+Để vào chế độ Product Owner:
+```bash  
 /po
-*help                          # Show all commands
+```
+
+Các lệnh có thể dùng:
+```bash
+*help                          # Hiện tất cả lệnh có sẵn
 *execute-checklist-po         # Chạy master checklist
-*shard-doc {doc} {dest}       # Chia document thành parts
-*validate-story-draft {story} # Validate story quality  
+*shard-doc "tài liệu" "thư mục đích"  # Chia tài liệu thành parts
+*validate-story-draft "story" # Kiểm tra chất lượng story
 *create-epic                  # Tạo epic cho brownfield
 *correct-course               # Điều chỉnh course
-*yolo                         # Toggle confirmations
-*exit                         # Thoát
+*yolo                         # Bật/tắt confirmations
+*exit                         # Thoát khỏi chế độ PO
 ```
 
-**Example Usage:**
+**Ví dụ sử dụng:**
 ```bash
 /po
 *shard-doc docs/prd.md docs/prd
-# → Automatically chia PRD thành:
-# → docs/prd/goals.md
-# → docs/prd/features.md  
-# → docs/prd/technical-requirements.md
+# Tự động chia PRD thành:
+# docs/prd/goals.md
+# docs/prd/features.md
+# docs/prd/technical-requirements.md
 
 *validate-story-draft docs/stories/story-1-1.md
-# → Check story completeness
-# → Validate against PRD requirements
+# Kiểm tra story có đầy đủ thông tin không
+# Validate với yêu cầu trong PRD
 ```
 
-##### **💻 Developer (Anh Tuấn):**
-```bash
-/dev
-*help                          # Show all commands
-*develop-story                # Implement story end-to-end  
-*run-tests                    # Chạy tests và linting
-*explain                      # Giải thích code vừa viết
-*exit                         # Thoát
-```
+**Developer - Anh Tuấn (Lập trình viên):**
 
-**Example Usage:**
+Để vào chế độ Developer:
 ```bash
 /dev  
+```
+
+Các lệnh có thể dùng:
+```bash
+*help                          # Hiện tất cả lệnh có sẵn
+*develop-story                # Implement story từ đầu đến cuối
+*run-tests                    # Chạy tests và linting  
+*explain                      # Giải thích code vừa viết
+*exit                         # Thoát khỏi chế độ Dev
+```
+
+**Ví dụ sử dụng:**
+```bash
+/dev
 *develop-story
-# → Đọc story requirements
-# → Implement từng task sequentially  
-# → Write tests
-# → Update story với progress
-# → Mark story "Ready for Review"
+# Đọc story requirements
+# Implement từng task theo thứ tự
+# Viết tests
+# Cập nhật tiến độ vào story
+# Đánh dấu story "Ready for Review"
 ```
 
-##### **🧪 QA Engineer (Anh Quang):**
+**QA Engineer - Anh Quang (Kiểm tra chất lượng code):**
+
+Để vào chế độ QA:
 ```bash
 /qa
-*help                          # Show all commands
-*review {story}               # Review code và refactor
-*exit                         # Thoát
 ```
 
-**Example Usage:**
+Các lệnh có thể dùng:
+```bash
+*help                          # Hiện tất cả lệnh có sẵn
+*review "story"               # Review code và refactor
+*exit                         # Thoát khỏi chế độ QA  
+```
+
+**Ví dụ sử dụng:**
 ```bash
 /qa
-*review docs/stories/story-1-1.md  
-# → Review code từ dev
-# → Active refactoring với explanations
-# → Update "QA Results" section
-# → Mark "Approved" hoặc "Changes Required"
+*review docs/stories/story-1-1.md
+# Review code từ dev
+# Active refactoring với giải thích chi tiết
+# Cập nhật "QA Results" section
+# Đánh dấu "Approved" hoặc "Changes Required"  
 ```
 
-### **🔄 Typical Workflows**
+### **Quy trình làm việc thông thường**
 
-#### **🌱 New Feature Workflow:**
+**Tạo tính năng mới hoàn chỉnh:**
 ```bash
-# 1. Plan feature
+# 1. Lập kế hoạch tính năng  
 /analyst
-*brainstorm "user authentication system"
+*brainstorm "hệ thống đăng nhập người dùng"
 
-# 2. Create requirements  
+# 2. Tạo yêu cầu
 /pm
 *create-prd
 
-# 3. Design UX (if needed)
+# 3. Thiết kế UX (nếu cần)
 /ux-expert
-*create-front-end-spec  
+*create-front-end-spec
 
-# 4. Create stories
-/sm  
+# 4. Tạo stories
+/sm
 *draft
 
-# 5. Validate story
+# 5. Kiểm tra story  
 /po
 *validate-story-draft docs/stories/story-1-1.md
 
-# 6. Implement
+# 6. Lập trình  
 /dev
 *develop-story
 
-# 7. Quality review  
-/qa
+# 7. Review chất lượng
+/qa  
 *review docs/stories/story-1-1.md
 ```
 
-#### **🐛 Bug Fix Workflow:**
-```bash
-# 1. Create bug story
+**Sửa bug nhanh:**
+```bash  
+# 1. Tạo bug story
 /sm
-*draft  # Describe bug + fix approach
+*draft  # Mô tả bug và cách fix
 
-# 2. Implement fix  
+# 2. Implement fix
 /dev
 *develop-story  # Fix + tests
 
 # 3. Senior review
-/qa  
-*review  # Ensure no regressions
+/qa
+*review  # Đảm bảo không gây lỗi khác
 ```
 
-#### **📊 Project Health Check:**
+**Kiểm tra tình trạng dự án:**
 ```bash
-# Check document alignment
-/po
+# Kiểm tra document alignment
+/po  
 *execute-checklist-po
 
-# Review code quality
-/qa  
-*review  # Review latest stories
+# Review chất lượng code
+/qa
+*review  # Review stories gần đây
 
-# Plan next iteration
+# Lập kế hoạch iteration tiếp  
 /sm
-*draft   # Create next stories
+*draft   # Tạo stories tiếp theo
 ```
 
-### **📁 File Structure**
+### **Cấu trúc thư mục**
 
 ```
-my-project/
-├── .bmad-core/                 # BMad Method core files
-│   ├── agents/                 # Agent definitions  
-│   ├── tasks/                  # Workflow tasks
+du-an-cua-toi/
+├── .bmad-core/                 # Core files của BMad Method
+│   ├── agents/                 # Định nghĩa agents
+│   ├── tasks/                  # Workflow tasks  
 │   ├── templates/              # Document templates
 │   ├── data/                   # Knowledge base
-│   └── core-config.yaml        # Main config
-├── .claude/                    # Claude Code config
-│   └── commands/BMad/          # Agent command definitions
-├── docs/                       # Project documentation
+│   └── core-config.yaml        # Config chính
+├── .claude/                    # Config của Claude Code
+│   └── commands/BMad/          # Định nghĩa lệnh agents
+├── docs/                       # Tài liệu dự án
 │   ├── prd.md                  # Product Requirements
-│   ├── architecture.md         # System Architecture  
-│   ├── prd/                    # Sharded PRD files
-│   ├── architecture/           # Sharded architecture files
+│   ├── architecture.md         # System Architecture
+│   ├── prd/                    # PRD được chia nhỏ
+│   ├── architecture/           # Architecture được chia nhỏ  
 │   └── stories/                # User stories
-├── src/                        # Source code  
-└── README.md                   # Project overview
+├── src/                        # Source code
+└── README.md                   # Tổng quan dự án
 ```
 
-### **⚙️ Configuration**
+### **Cấu hình quan trọng**
 
-#### **Core Config (.bmad-core/core-config.yaml):**
-```yaml
-# Files Dev agent luôn load
+**Core Config (.bmad-core/core-config.yaml):**
+```yaml  
+# Files mà Dev agent luôn phải đọc
 devLoadAlwaysFiles:
   - docs/architecture/coding-standards.md
-  - docs/architecture/tech-stack.md  
+  - docs/architecture/tech-stack.md
   - docs/architecture/project-structure.md
 
-# PRD configuration  
+# Cấu hình PRD
 prd:
   prdFile: docs/prd.md
   prdSharded: true
   prdShardedLocation: docs/prd
 
-# Architecture configuration
+# Cấu hình Architecture  
 architecture:
   architectureFile: docs/architecture.md
-  architectureSharded: true  
+  architectureSharded: true
   architectureShardedLocation: docs/architecture
 
-# Story location
+# Vị trí lưu stories
 devStoryLocation: docs/stories
 ```
 
-#### **Technical Preferences (.bmad-core/data/technical-preferences.md):**
+**Technical Preferences (.bmad-core/data/technical-preferences.md):**
 ```markdown
 # Technical Preferences
 
 ## Frontend
-- Framework: React with TypeScript
-- State Management: Zustand  
-- Styling: Tailwind CSS
+- Framework: React với TypeScript
+- State Management: Zustand
+- Styling: Tailwind CSS  
 - UI Components: shadcn/ui
 
-## Backend  
+## Backend
 - Runtime: Node.js
-- Framework: Express.js  
+- Framework: Express.js
 - Database: PostgreSQL
 - ORM: Prisma
 
 ## Testing
 - Unit Tests: Jest
-- Integration Tests: Supertest  
+- Integration Tests: Supertest
 - E2E Tests: Playwright
 
-## Deployment
+## Deployment  
 - Platform: Vercel (Frontend) + Railway (Backend)
 - Database: Neon PostgreSQL
 ```
 
-### **💡 Tips & Best Practices**
+### **Mẹo tăng năng suất**
 
-#### **🎯 Productivity Tips:**
+**Tăng tốc độ làm việc:**
 
-1. **Use YOLO Mode for speed:**
+1. **Dùng YOLO Mode khi cần nhanh:**
    ```bash
    /po
-   *yolo  # Skip confirmations
+   *yolo  # Bỏ qua confirmations
    ```
 
-2. **Batch similar operations:**  
+2. **Làm nhiều công việc cùng lúc:**
    ```bash
-   /sm
-   *draft  # Create multiple stories
+   /sm  
+   *draft  # Tạo nhiều stories
    *draft
-   *draft  
+   *draft
    ```
 
-3. **Regular health checks:**
-   ```bash
-   /po  
-   *execute-checklist-po  # Weekly checks
-   ```
-
-#### **📋 Quality Tips:**
-
-1. **Always validate stories:**
+3. **Kiểm tra định kỳ:**
    ```bash
    /po
-   *validate-story-draft {story}  # Before development
+   *execute-checklist-po  # Kiểm tra hàng tuần
    ```
 
-2. **Use QA for all code:**
+**Đảm bảo chất lượng:**
+
+1. **Luôn validate stories:**  
+   ```bash
+   /po
+   *validate-story-draft "story"  # Trước khi dev
+   ```
+
+2. **Dùng QA cho mọi code:**
    ```bash
    /qa
-   *review  # Never skip QA review
+   *review  # Không bao giờ bỏ qua QA review
    ```
 
-3. **Keep documents updated:**
-   ```bash
+3. **Giữ tài liệu cập nhật:**
+   ```bash  
    /po
-   *shard-doc  # After major PRD changes
+   *shard-doc  # Sau khi thay đổi PRD lớn
    ```
 
-#### **🔄 Workflow Tips:**
+**Tối ưu quy trình làm việc:**
 
-1. **Start small, iterate:**
-   - Begin với 1-2 core features
-   - Add complexity gradually
-   - Regular user feedback
+1. **Bắt đầu nhỏ, mở rộng dần:**
+   - Làm 1-2 tính năng cốt lõi trước
+   - Thêm complexity từ từ  
+   - Thu thập feedback thường xuyên
 
-2. **Maintain document quality:**
-   - Sharded documents load faster
-   - Keep technical preferences updated
-   - Regular architecture reviews
+2. **Duy trì chất lượng tài liệu:**
+   - Tài liệu chia nhỏ load nhanh hơn
+   - Cập nhật technical preferences thường xuyên
+   - Review architecture định kỳ
 
-3. **Use agents' strengths:**
-   - Analyst: Broad research and ideation
-   - PM: Structured requirements  
-   - Dev: Focused implementation
-   - QA: Quality and mentorship
+3. **Tận dụng điểm mạnh từng agent:**
+   - Analyst: Nghiên cứu rộng và ideation
+   - PM: Yêu cầu có cấu trúc
+   - Dev: Implementation tập trung  
+   - QA: Chất lượng và mentorship
 
-### **🚨 Troubleshooting**
+### **Xử lý sự cố thường gặp**
 
-#### **Common Issues:**
-
-**Issue: Agent không nhớ context**
+**Vấn đề: Agent không nhớ context**
 ```bash
-# Solution: Check document structure
-/po  
-*execute-checklist-po  # Verify documents aligned
-```
-
-**Issue: Stories thiếu details**
-```bash  
-# Solution: Better validation
+# Giải pháp: Kiểm tra cấu trúc tài liệu
 /po
-*validate-story-draft {story}  # Before development
+*execute-checklist-po  # Verify documents có aligned không
 ```
 
-**Issue: Code quality inconsistent**  
+**Vấn đề: Stories thiếu chi tiết**
 ```bash
-# Solution: Always use QA
+# Giải pháp: Validation tốt hơn
+/po  
+*validate-story-draft "story"  # Trước khi development
+```
+
+**Vấn đề: Chất lượng code không đồng nhất**
+```bash
+# Giải pháp: Luôn dùng QA
 /qa
-*review  # Don't skip reviews
+*review  # Không bỏ qua reviews
 ```
 
-**Issue: Development quá chậm**
+**Vấn đề: Development quá chậm**
 ```bash
-# Solution: Check story size
+# Giải pháp: Kiểm tra kích thước story  
 /sm
-*draft  # Break down large stories
+*draft  # Chia nhỏ stories lớn
 ```
 
-#### **Performance Optimization:**
+**Tối ưu hiệu suất:**
 
 1. **Document sharding:**
    ```bash
@@ -837,15 +855,15 @@ devStoryLocation: docs/stories
    *shard-doc docs/prd.md docs/prd
    ```
 
-2. **Use technical preferences:**
-   - Update `.bmad-core/data/technical-preferences.md`
-   - Agents sẽ follow preferences
+2. **Dùng technical preferences:**
+   - Cập nhật .bmad-core/data/technical-preferences.md
+   - Agents sẽ theo preferences này
 
-3. **Regular cleanup:**  
-   - Remove unused files
-   - Archive completed stories
-   - Update core config
+3. **Dọn dẹp định kỳ:**
+   - Xóa files không dùng
+   - Archive stories đã hoàn thành
+   - Cập nhật core config
 
 ---
 
-*Tiếp tục với Section 5...*
+*Tiếp tục với Section 5: Ví dụ thực tế...*
