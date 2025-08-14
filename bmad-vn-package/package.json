@@ -1,0 +1,36 @@
+{
+  "name": "ndq-bmad-vn",
+  "version": "1.0.0",
+  "description": "BMad Method CLI tool - Vietnamese version for rapid software development with AI agents",
+  "main": "index.js",
+  "bin": {
+    "bmad-vn": "./bin/bmad-vn.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bmad",
+    "ai-agents",
+    "software-development",
+    "vietnamese",
+    "claude",
+    "project-template"
+  ],
+  "author": "NDQ <your-email@example.com>",
+  "license": "MIT",
+  "preferGlobal": true,
+  "dependencies": {
+    "fs-extra": "^11.1.1",
+    "commander": "^11.0.0",
+    "chalk": "^4.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ndq/bmad-vn.git"
+  },
+  "homepage": "https://github.com/ndq/bmad-vn#readme",
+  "bugs": {
+    "url": "https://github.com/ndq/bmad-vn/issues"
+  }
+}
