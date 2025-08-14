@@ -1,4 +1,4 @@
-# @ndq/bmad-vn
+# ndq-bmad-vn
 
 BMad Method CLI tool - Vietnamese version for rapid software development with AI agents
 
@@ -11,7 +11,7 @@ BMad Method là phương pháp phát triển phần mềm sử dụng 7 AI agent
 Không cần cài đặt global, sử dụng trực tiếp với npx:
 
 ```bash
-npx @ndq/bmad-vn create my-project
+npx ndq-bmad-vn create my-project
 ```
 
 ## Cách sử dụng
@@ -19,7 +19,7 @@ npx @ndq/bmad-vn create my-project
 ### Tạo dự án mới
 
 ```bash
-npx @ndq/bmad-vn create my-awesome-project
+npx ndq-bmad-vn create my-awesome-project
 cd my-awesome-project
 claude
 /analyst
@@ -28,7 +28,7 @@ claude
 ### Khởi tạo trong thư mục hiện tại
 
 ```bash
-npx @ndq/bmad-vn init
+npx ndq-bmad-vn init
 claude
 /analyst
 ```
@@ -71,7 +71,7 @@ Khi agents chạy sẽ tự tạo:
 
 ```bash
 # 1. Tạo dự án
-npx @ndq/bmad-vn create todo-app
+npx ndq-bmad-vn create todo-app
 
 # 2. Bắt đầu với Analyst
 cd todo-app

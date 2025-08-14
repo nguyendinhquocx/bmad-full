@@ -1,6 +1,6 @@
 {
   "name": "ndq-bmad-vn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "BMad Method CLI tool - Vietnamese version for rapid software development with AI agents",
   "main": "index.js",
   "bin": {
