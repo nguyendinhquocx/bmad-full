@@ -99,6 +99,37 @@ Bạn: "/exit"
 # → "Chuyên gia bảo mật.md"
 ```
 
+### **Vietnamese Language Priority (MỚI!)**
+
+**TẤT CẢ 85 CHUYÊN GIA HIỆN TẠI ƯU TIÊN TIẾNG VIỆT:**
+
+- **90% nội dung bằng tiếng Việt** - Giao tiếp tự nhiên như mentor Việt Nam  
+- **Technical terms giữ nguyên** - React, API, JSON, etc. khi cần thiết  
+- **Format clean và professional** - Không dùng emoji/icons trừ khi yêu cầu
+- **Tone thân thiện** - Chuyên nghiệp nhưng gần gũi  
+
+**Ví dụ cải thiện:**
+```
+❌ Trước: "I recommend implementing authentication with JWT tokens..."
+
+✅ Bây giờ: "Security Expert - Chào bạn! 
+
+Tôi khuyên bạn nên implement authentication system bằng JWT tokens với những điểm sau:
+
+**Đánh giá hiện tại:**
+- TodoFlow đang thiếu authentication layer
+- User data chưa được bảo vệ đúng cách
+
+**Gợi ý implementation:**
+1. Setup JWT với bcrypt cho password hashing
+2. Tạo middleware để protect các API routes
+
+**Lưu ý quan trọng:**
+Nhớ validate tokens ở mọi protected routes để đảm bảo security.
+
+Bạn có muốn tôi detail thêm phần security middleware không?"
+```
+
 ---
 
 ## **WORKFLOW TÍCH HỢP VỚI 7 CHUYÊN GIA CỐT LỒI**
