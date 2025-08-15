@@ -1,6 +1,6 @@
 # BMad Method - Hướng Dẫn Toàn Diện Bằng Tiếng Việt
 
-> **Phương pháp phát triển phần mềm hiện đại với sự hỗ trợ của 7 chuyên gia AI**
+> **Phương pháp phát triển phần mềm hiện đại với 10 AI agents thông minh và hệ thống orchestration**
 
 ## **Mục Lục**
 
@@ -19,7 +19,8 @@
 BMad Method là một phương pháp phát triển phần mềm kết hợp:
 
 - **Agile principles** - Phát triển linh hoạt theo từng giai đoạn nhỏ
-- **7 AI agents chuyên nghiệp** - Mỗi agent phụ trách một công việc cụ thể
+- **10 AI agents thông minh** - 3 tầng agents với chức năng riêng biệt
+- **Smart orchestration** - Hệ thống điều phối và guidance thông minh
 - **Document-driven development** - Tất cả thông tin được lưu trong tài liệu
 - **Context persistence** - Agents nhớ được công việc dù bạn tắt máy
 
@@ -37,10 +38,11 @@ BMad Method là một phương pháp phát triển phần mềm kết hợp:
 
 | **Đặc điểm** | **BMad Method** | **AI thông thường** | **Làm thủ công** |
 |------------|-----------------|---------------------|------------------|
-| **Quy trình** | Có cấu trúc rõ ràng | Tùy hứng | Tùy kinh nghiệm |
-| **Chất lượng** | Đồng nhất | Không ổn định | Tùy người |
-| **Nhớ context** | Lưu trong file | Quên khi tắt | Phải ghi chép |
-| **Phân công** | Rõ ràng từng vai trò | Một AI làm hết | Một người làm hết |
+| **Quy trình** | 3-tầng orchestration | Tùy hứng | Tùy kinh nghiệm |
+| **Chất lượng** | Đồng nhất với QA | Không ổn định | Tùy người |
+| **Nhớ context** | Document-driven | Quên khi tắt | Phải ghi chép |
+| **Phân công** | 10 agents chuyên môn | Một AI làm hết | Một người làm hết |
+| **Guidance** | Smart orchestration | Không có | Manual planning |
 
 ### **Khi nào nên dùng BMad Method?**
 
@@ -57,7 +59,12 @@ BMad Method là một phương pháp phát triển phần mềm kết hợp:
 - Học code cá nhân
 - Chỉ cần chứng minh ý tưởng
 
-### **7 Chuyên Gia AI Trong Team**
+### **10 AI Agents - 3 Tầng Hoạt Động**
+
+BMad Method được tổ chức thành **3 tầng agents** với chức năng riêng biệt:
+
+#### **Tầng 1: Core Workflow Agents (7 agents)**
+*Thực hiện workflow hàng ngày từ ý tưởng đến sản phẩm*
 
 **Analyst - Cô Mai:** Chuyên nghiên cứu
 - Nghiên cứu thị trường, phân tích đối thủ
@@ -73,6 +80,11 @@ BMad Method là một phương pháp phát triển phần mềm kết hợp:
 - Thiết kế giao diện người dùng
 - Tạo wireframe và user flow
 - Tối ưu trải nghiệm người dùng
+
+**Architect:** Kiến trúc sư hệ thống
+- Thiết kế kiến trúc tổng thể
+- Chọn công nghệ và tech stack
+- Đảm bảo scalability và security
 
 **Scrum Master - Anh Minh:** Quản lý quy trình
 - Tạo user stories từ PRD
@@ -93,6 +105,71 @@ BMad Method là một phương pháp phát triển phần mềm kết hợp:
 - Review code như senior developer
 - Refactor code để tốt hơn
 - Đảm bảo coding standards
+
+#### **Tầng 2: Task Execution**
+*Thực hiện các tasks đặc biệt và troubleshooting*
+
+**BMad Master 🧙:** Universal Task Executor
+- Execute bất kỳ task nào trong hệ thống
+- Access toàn bộ templates, workflows, checklists
+- Knowledge base mode cho research sâu
+- Ideal cho ad-hoc tasks và troubleshooting
+
+#### **Tầng 3: Orchestration & Guidance** 
+*Điều phối thông minh và hướng dẫn workflow*
+
+**BMad Orchestrator 🎭:** Master Coordinator
+- Smart workflow guidance và planning
+- Agent routing và multi-agent coordination  
+- Transform thành bất kỳ agent nào khi cần
+- Party mode: group chat với tất cả agents
+
+### **🚀 Tầng Orchestration - Bắt Đầu Từ Đây**
+
+**Khuyến nghị cho người mới:**
+
+#### **Approach 1: Smart Guidance (Khuyến nghị)**
+```bash
+# Bước 1: Bắt đầu với Orchestrator để được hướng dẫn
+/bmad-orchestrator
+*workflow-guidance
+
+# Bước 2: Orchestrator sẽ phân tích và recommend workflow phù hợp
+# Ví dụ: "Greenfield project → *workflow greenfield-fullstack"
+
+# Bước 3: Orchestrator guide bạn đến đúng agents
+*agent analyst    # Khi cần research
+*agent pm         # Khi cần tạo PRD
+# v.v.
+```
+
+#### **Approach 2: Direct Agent Access**
+```bash
+# Nếu bạn đã biết rõ cần gì, có thể vào thẳng
+/analyst          # Cho research và brainstorming
+/pm              # Cho tạo PRD
+/dev             # Cho development
+# v.v.
+```
+
+#### **Approach 3: Task Execution**
+```bash
+# Cho quick tasks hoặc troubleshooting
+/bmad-master
+*task            # List all available tasks
+*create-doc      # Tạo documents nhanh
+*execute-checklist # Chạy quality checks
+```
+
+#### **Khi nào dùng agent nào:**
+
+| **Tình huống** | **Agent phù hợp** | **Lý do** |
+|----------------|-------------------|-----------|
+| **Bắt đầu project mới** | `/bmad-orchestrator` | Smart guidance, workflow planning |
+| **Không biết làm gì tiếp** | `/bmad-orchestrator` | Phân tích context, recommend next steps |
+| **Cần execute task nhanh** | `/bmad-master` | Universal executor, không cần persona |
+| **Daily workflow** | **7 core agents** | Chuyên môn sâu, workflow chuẩn |
+| **Stuck hoặc cần help** | `/bmad-orchestrator` | Troubleshooting, multi-agent coordination |
 
 ---
 
@@ -221,7 +298,24 @@ Completed Code → /qa → Production Ready
 Ý tưởng → Nghiên cứu → Tạo PRD → Thiết kế UX → Kiến trúc → Code → Deploy
 ```
 
-**Các lệnh cần dùng:**
+**Approach mới (Khuyến nghị):**
+```bash
+# Bước 0: Bắt đầu với Orchestrator guidance
+/bmad-orchestrator
+*workflow-guidance
+# → Orchestrator recommend: "greenfield-fullstack workflow"
+
+*workflow greenfield-fullstack
+# → Orchestrator guide qua từng bước và auto-switch agents
+
+# Hoặc manual guidance:
+*agent analyst      # Khi Orchestrator recommend research
+*agent pm          # Khi Orchestrator recommend PRD creation
+*agent architect   # Khi Orchestrator recommend system design
+# v.v.
+```
+
+**Approach truyền thống (vẫn hoạt động):**
 ```bash
 # Bước 1: Nghiên cứu ý tưởng
 /analyst
@@ -398,13 +492,19 @@ cp -r /path/to/bmad-project/.bmad-core .
 cp -r /path/to/bmad-project/.claude .
 ```
 
-**Bước 2: Kiểm tra cài đặt**
+**Bước 2: Kiểm tra cài đặt và bắt đầu**
 ```bash
-# Test các agent có hoạt động không
+# Test Orchestrator (khuyến nghị bắt đầu từ đây)
+/bmad-orchestrator
+*help     # Xem tất cả capabilities
+*workflow-guidance  # Được hướng dẫn workflow phù hợp
+
+# Hoặc test individual agents
 /analyst  # Phải hiện "Xin chào! Tôi là Cô Mai..."
 *exit
 
-/pm       # Phải hiện "Xin chào! Tôi là Anh Huy..."
+/bmad-master  # Test task executor
+*help
 *exit
 ```
 
@@ -620,7 +720,23 @@ Các lệnh có thể dùng:
 
 ### **Quy trình làm việc thông thường**
 
-**Tạo tính năng mới hoàn chỉnh:**
+**Tạo tính năng mới hoàn chỉnh (Orchestrator approach):**
+```bash
+# 1. Bắt đầu với Orchestrator guidance
+/bmad-orchestrator
+*workflow-guidance  # Orchestrator analyze context và recommend workflow
+
+# 2. Follow Orchestrator guidance
+*agent analyst      # Khi Orchestrator recommend research
+*agent pm          # Khi Orchestrator recommend PRD
+*agent ux-expert   # Khi Orchestrator recommend UX design
+# Orchestrator sẽ guide through optimal sequence
+
+# 3. Hoặc dùng integrated workflow
+*workflow [appropriate-workflow]  # Orchestrator execute end-to-end
+```
+
+**Tạo tính năng mới (Traditional approach):**
 ```bash
 # 1. Lập kế hoạch tính năng  
 /analyst
@@ -653,32 +769,38 @@ Các lệnh có thể dùng:
 
 **Sửa bug nhanh:**
 ```bash  
-# 1. Tạo bug story
+# Option 1: Traditional approach
 /sm
 *draft  # Mô tả bug và cách fix
-
-# 2. Implement fix
 /dev
 *develop-story  # Fix + tests
-
-# 3. Senior review
 /qa
 *review  # Đảm bảo không gây lỗi khác
+
+# Option 2: Quick fix với BMad Master
+/bmad-master
+*task create-next-story  # Quick bug story creation
+# Switch to dev agent từ đây
 ```
 
 **Kiểm tra tình trạng dự án:**
 ```bash
-# Kiểm tra document alignment
+# Option 1: Orchestrator overview
+/bmad-orchestrator
+*status  # Complete project status
+*plan-status  # Workflow progress
+
+# Option 2: Traditional detailed check
 /po  
-*execute-checklist-po
-
-# Review chất lượng code
+*execute-checklist-po  # Document alignment
 /qa
-*review  # Review stories gần đây
-
-# Lập kế hoạch iteration tiếp  
+*review  # Code quality review
 /sm
-*draft   # Tạo stories tiếp theo
+*draft   # Plan next iterations
+
+# Option 3: Quick task-based check
+/bmad-master
+*execute-checklist po-master-checklist  # Quick quality gate
 ```
 
 ### **Cấu trúc thư mục**
