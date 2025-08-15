@@ -11,7 +11,8 @@
       "Bash(npm publish:*)",
       "Bash(npm:*)",
       "Bash(npx ndq-bmad-vn create:*)",
-      "Bash(npx:*)"
+      "Bash(npx:*)",
+      "Bash(dir:*)"
     ],
     "deny": [],
     "ask": [],
