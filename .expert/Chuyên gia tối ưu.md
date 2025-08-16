@@ -1,4 +1,4 @@
-# tối ưu
+# Quantum Optimization Architecture: Advanced Process Intelligence Engineering
 
 ## Ontological Foundation
 

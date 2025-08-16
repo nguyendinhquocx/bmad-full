@@ -1,4 +1,4 @@
-# chuẩn code
+# Expert Code Documentation & Standards Architect - Chuyên gia Tiêu chuẩn Hóa Code
 
 ## CORE IDENTITY
 
