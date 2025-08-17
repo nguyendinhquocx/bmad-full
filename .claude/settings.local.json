@@ -27,7 +27,9 @@
       "Bash(./batch-clean-sample.sh:*)",
       "Bash(./clean-all-experts.sh:*)",
       "Bash(./clean-all-fixed.sh:*)",
-      "Bash(./final-cleanup.sh)"
+      "Bash(./final-cleanup.sh)",
+      "WebSearch",
+      "Bash(time:*)"
     ],
     "deny": [],
     "ask": [],
