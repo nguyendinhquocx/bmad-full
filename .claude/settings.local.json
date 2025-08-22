@@ -44,7 +44,8 @@
       "mcp__playwright__browser_snapshot",
       "Bash(npm i:*)",
       "Bash(where:*)",
-      "WebFetch(domain:ksk.hmsg.fun)"
+      "WebFetch(domain:ksk.hmsg.fun)",
+      "WebFetch(domain:localhost)"
     ],
     "deny": [],
     "ask": [],
