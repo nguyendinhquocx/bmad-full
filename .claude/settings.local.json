@@ -29,15 +29,25 @@
       "Bash(./clean-all-fixed.sh:*)",
       "Bash(./final-cleanup.sh)",
       "WebSearch",
-      "Bash(time:*)"
+      "Bash(time:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(npx:*)",
+      "Bash(where node)",
+      "Bash(where npm)",
+      "Bash(npm install:*)",
+      "Bash(powershell:*)",
+      "Bash(npm config:*)",
+      "Bash(claude mcp:*)",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_install",
+      "mcp__playwright__browser_snapshot",
+      "Bash(npm i:*)",
+      "Bash(where:*)",
+      "WebFetch(domain:ksk.hmsg.fun)"
     ],
     "deny": [],
     "ask": [],
-    "defaultMode": "acceptEdits",
-    "additionalDirectories": [
-      "D:\\pcloud\\code\\ai\\BMAD\\BMAD-METHOD-4",
-      "D:\\pcloud\\code\\ai\\BMAD\\test-bmad-project",
-      "D:\\pcloud\\code\\ai\\BMAD"
-    ]
+    "defaultMode": "acceptEdits"
   }
 }
