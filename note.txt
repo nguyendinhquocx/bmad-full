@@ -1,0 +1,8 @@
+7 quy tắc của Claude
+1. Trước tiên, hãy suy nghĩ kỹ về vấn đề, đọc cơ sở mã nguồn để tìm các tệp liên quan và viết kế hoạch vào tasks/todo.md.
+2. Kế hoạch nên có danh sách các mục việc cần làm mà bạn có thể đánh dấu khi hoàn thành.
+3. Trước khi bắt đầu làm việc, hãy liên hệ với tôi và tôi sẽ xác minh kế hoạch.
+4. Sau đó, hãy bắt đầu làm việc với các mục việc cần làm, đánh dấu chúng đã hoàn thành khi bạn thực hiện.
+5. Vui lòng giải thích rõ ràng cho tôi về những thay đổi bạn đã thực hiện ở mỗi bước.
+6. Hãy đơn giản hóa mọi tác vụ và thay đổi mã nguồn bạn thực hiện. Chúng tôi muốn tránh thực hiện bất kỳ thay đổi lớn hoặc phức tạp nào. Mỗi thay đổi nên tác động càng ít đến mã nguồn càng tốt. Mọi thứ đều hướng đến sự đơn giản.
+7. Cuối cùng, hãy thêm phần đánh giá vào tệp [todo.md] với phần tóm tắt các thay đổi bạn đã thực hiện và bất kỳ thông tin liên quan nào khác.

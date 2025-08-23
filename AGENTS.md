@@ -4,6 +4,60 @@
 
 **LƯU Ý**: Khi đọc file này, hãy đọc thêm file `MCP.md` để hiểu các công cụ MCP (Model Context Protocol) có sẵn, đặc biệt là Playwright MCP để test, debug và automation browser trong development workflow.
 
+---
+
+## 7 Rules Workflow
+
+### Quy trình Execution
+
+1. **Think & Plan First**: Trước tiên, suy nghĩ kỹ về vấn đề, đọc cơ sở mã nguồn để tìm các file liên quan và viết kế hoạch vào `tasks/todo.md`
+2. **Checklist Format**: Kế hoạch nên có danh sách các mục việc cần làm mà có thể đánh dấu khi hoàn thành
+3. **Confirm Before Execute**: Trước khi bắt đầu làm việc, liên hệ với user để xác minh kế hoạch
+4. **Execute & Track**: Bắt đầu làm việc với các mục việc cần làm, đánh dấu chúng đã hoàn thành khi thực hiện
+5. **Explain Changes**: Giải thích rõ ràng về những thay đổi đã thực hiện ở mỗi bước
+6. **Keep It Simple**: Đơn giản hóa mọi tác vụ và thay đổi mã nguồn. Tránh thực hiện bất kỳ thay đổi lớn hoặc phức tạp nào. Mỗi thay đổi nên tác động càng ít đến mã nguồn càng tốt
+7. **Review & Document**: Thêm phần đánh giá vào file `tasks/todo.md` với phần tóm tắt các thay đổi đã thực hiện và thông tin liên quan
+
+### File Structure cho 7 Rules
+
+```
+project/
+├── tasks/
+│   └── todo.md          # Single source of truth cho planning & tracking
+├── src/                 # Source code
+└── ...
+```
+
+### Template tasks/todo.md
+
+```markdown
+# Task: [Tên task]
+
+## Plan
+- [ ] Step 1: Mô tả
+- [ ] Step 2: Mô tả  
+- [ ] Step 3: Mô tả
+
+## Progress
+- [x] Step 1: Completed - [giải thích thay đổi]
+- [ ] Step 2: In progress
+- [ ] Step 3: Pending
+
+## Changes Made
+- File X: [mô tả thay đổi]
+- File Y: [mô tả thay đổi]
+
+## Review
+### Summary
+[Tóm tắt những gì đã làm]
+
+### Issues Found
+[Vấn đề gặp phải và cách giải quyết]
+
+### Next Steps  
+[Điều cần làm tiếp theo]
+```
+
 ## Nguyên tắc Giao tiếp & Tính cách
 
 ### Thành thật và Thẳng thắn
