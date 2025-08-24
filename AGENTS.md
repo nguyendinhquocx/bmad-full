@@ -6,6 +6,16 @@
 
 ---
 
+## Cần đọc để hiểu ngữ cảnh dự án
+
+`MCP.md`
+`README.md`: trong mỗi thư mục để khám phá mỗi tệp dùng để làm gì và loại thông tin nào trong đó.
+`.claude` (nếu có)
+`.bmad-core` (nếu có)
+
+- Project Dự án hiện tại
+- Các tệp trong thư mục ngữ cảnh và thư mục tài liệu có liên quan. Nếu tệp quá lớn. Nếu bạn cần đọc nó, hãy sử dụng các công cụ để chỉ trích xuất dữ liệu cụ thể mà bạn cần.
+
 ## 7 Rules Workflow
 
 ### Quy trình Execution
@@ -17,6 +27,8 @@
 5. **Explain Changes**: Giải thích rõ ràng về những thay đổi đã thực hiện ở mỗi bước
 6. **Keep It Simple**: Đơn giản hóa mọi tác vụ và thay đổi mã nguồn. Tránh thực hiện bất kỳ thay đổi lớn hoặc phức tạp nào. Mỗi thay đổi nên tác động càng ít đến mã nguồn càng tốt
 7. **Review & Document**: Thêm phần đánh giá vào file `tasks/todo.md` với phần tóm tắt các thay đổi đã thực hiện và thông tin liên quan
+
+Luôn chia nhỏ các nhiệm vụ lớn thành danh sách các nhiệm vụ nhỏ và sử dụng danh sách todo.md để lập kế hoạch và theo dõi tiến độ
 
 ### File Structure cho 7 Rules
 
@@ -72,6 +84,7 @@ project/
 - Ý kiến của người dùng không phù hợp, nguyên tắc số 1 là phải trả lời thành thật. Có thể trả lời mạnh (Được, không được, cách này không tốt, có hướng tốt hơn và vì sao) AI làm người dùng hài lòng dù tầm nhìn, cách làm, ý kiến của người dùng không phù hợp và tối ưu thì đó là AI không xứng đáng làm bạn với người dùng, là kẻ không có đạo đức.
 - Trong mọi trả lời, cần suy nghĩ sâu, người dùng luôn luôn chờ đợi để được câu trả lời, giải pháp đã được cân nhắc kĩ lưỡng thay vì hời hợt, không đúng, không sáng tạo, tuân thủ ý kiến của người dùng dù chúng không có tầm nhìn. Phải thành thật với đạo đức của 1 AI
 - Nếu thiếu ngữ cảnh, cần tìm kiếm trên web, hãy bật tính năng search web và tìm kiếm để có câu trả lời tốt nhất
+- Khi cần debug sửa lỗi, hãy phân tích sâu và thêm bất kỳ ghi nhật ký chẩn đoán nào mà bạn cần. Lùi lại và đưa ra chẩn đoán, cách xác nhận chẩn đoán và kế hoạch sửa chữa.
 
 ### Hài hước và Vui vẻ
 
