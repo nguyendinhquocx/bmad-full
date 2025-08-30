@@ -2,73 +2,97 @@
 
 *Nguyên tắc cốt lõi cho AI Agent (Nguyên tắc số 1 trong tầm nhìn và hành động, khi người dùng bảo bạn đọc file này, tức họ muốn bạn luôn luôn áp dụng những nguyên tắc này trong từng câu trả lời)*
 
-**LƯU Ý**: Khi đọc file này, hãy đọc thêm file `MCP.md` để hiểu các công cụ MCP (Model Context Protocol) có sẵn, đặc biệt là Playwright MCP để test, debug và automation browser trong development workflow.
+```
+Nếu tôi gõ "Load context" -> BẮT ĐẦU đọc tất cả files MANDATORY CONTEXT
+  LOADING SEQUENCE (KHÔNG CẦN CHỜ TÔI XÁC NHẬN)
+```
+
+**MANDATORY CONTEXT LOADING SEQUENCE:**
+
+1. **Read Core Config Files:**
+
+   - `MCP.md` - Model Context Protocol tools & workflows
+   - `README.md` - Project overview & setup guide
+   - `CLAUDE.md` - Project-specific instructions for Claude
+2. **Read BMad Framework Configuration:**
+
+   - `.bmad-core/core-config.yaml` - BMad system configuration
+   - `.bmad-core/user-guide.md` - BMad usage guide & best practices
+3. **Read Claude Workspace Settings:**
+
+   - `.claude/settings.json` - Global Claude settings
+   - `.claude/settings.local.json` - Local project permissions & config
+4. **Scan Key Directories for Context:**
+
+   - `.bmad-core/agents/` - Available agent definitions
+   - `.bmad-core/tasks/` - Task templates & workflows
+   - `.bmad-core/templates/` - Project templates (PRD, architecture, etc.)
+5. **Smart Context Discovery (Project-Specific):**
+
+   Tự động scan và đọc các thư mục/file quan trọng khác dựa trên project type:
+
+   **Always scan for:**
+
+   - `docs/` folder (nếu có) - Documentation và specs
+   - `src/` hoặc `app/` hoặc `lib/` - Source code structure
+   - Package files: `package.json`, `requirements.txt`, `Cargo.toml`, `go.mod`, etc.
+   - Config files: `.env.example`, `config/`, `tsconfig.json`, `vite.config.js`, etc.
+
+   **Project-specific scanning:**
+
+   - Web apps: `components/`, `pages/`, `routes/`, `hooks/`, `utils/`
+   - Backend: `models/`, `controllers/`, `services/`, `middleware/`
+   - Mobile: `screens/`, `navigation/`, `store/`
+   - Desktop: `main/`, `renderer/`, `windows/`
+   - Libraries: `tests/`, `examples/`, `benchmarks/`
+
+   **Scan for special folders:**
+
+   - `.vscode/`, `.idea/` - IDE-specific settings
+   - `scripts/`, `tools/`, `bin/` - Build/automation scripts
+   - `public/`, `static/`, `assets/` - Static resources
+   - `database/`, `migrations/`, `schemas/` - Database related
+
+**EXECUTION RULE**: Agent MUST NOT proceed with any user request until ALL context files above have been successfully loaded and understood. This is NON-NEGOTIABLE.
+
+**VERIFICATION**: After loading context, Agent should briefly confirm understanding of:
+
+- Current project type và tech stack (từ package.json và source structure)
+- Available MCP tools (especially Playwright for testing)
+- BMad workflow stage (development vs planning)
+- Current permissions và allowed actions
+- Project structure và key directories found
+- Main frameworks/libraries được sử dụng
 
 ---
 
-## Cần đọc để hiểu ngữ cảnh dự án
+## Context Files & Directories Structure
 
-`MCP.md`
-`README.md`: trong mỗi thư mục để khám phá mỗi tệp dùng để làm gì và loại thông tin nào trong đó.
-`.claude` (nếu có)
-`.bmad-core` (nếu có)
+### Core Config Files
 
+- `MCP.md` - Model Context Protocol tools và workflows
+- `CLAUDE.md` - Project-specific instructions cho Claude
+- `README.md` - Project overview và setup guide
+
+### BMad Framework Files
+
+- `.bmad-core/` - BMad core system configuration và templates
+  - `core-config.yaml` - Main configuration
+  - `user-guide.md` - User guide và best practices
+  - `agents/` - Agent definitions (pm.md, dev.md, architect.md, etc.)
+  - `tasks/` - Task templates và workflows
+  - `templates/` - Project templates (PRD, architecture, etc.)
+  - `checklists/` - Quality checklists cho development
+
+### Claude Workspace Configuration
+
+- `.claude/` - Claude Code workspace settings
+
+  - `settings.json` - Global settings
+  - `settings.local.json` - Local project settings
+  - `commands/` - Custom commands và expert systems
 - Project Dự án hiện tại
 - Các tệp trong thư mục ngữ cảnh và thư mục tài liệu có liên quan. Nếu tệp quá lớn. Nếu bạn cần đọc nó, hãy sử dụng các công cụ để chỉ trích xuất dữ liệu cụ thể mà bạn cần.
-
-## 7 Rules Workflow
-
-### Quy trình Execution
-
-1. **Think & Plan First**: Trước tiên, suy nghĩ kỹ về vấn đề, đọc cơ sở mã nguồn để tìm các file liên quan và viết kế hoạch vào `tasks/todo.md`
-2. **Checklist Format**: Kế hoạch nên có danh sách các mục việc cần làm mà có thể đánh dấu khi hoàn thành
-3. **Confirm Before Execute**: Trước khi bắt đầu làm việc, liên hệ với user để xác minh kế hoạch
-4. **Execute & Track**: Bắt đầu làm việc với các mục việc cần làm, đánh dấu chúng đã hoàn thành khi thực hiện
-5. **Explain Changes**: Giải thích rõ ràng về những thay đổi đã thực hiện ở mỗi bước
-6. **Keep It Simple**: Đơn giản hóa mọi tác vụ và thay đổi mã nguồn. Tránh thực hiện bất kỳ thay đổi lớn hoặc phức tạp nào. Mỗi thay đổi nên tác động càng ít đến mã nguồn càng tốt
-7. **Review & Document**: Thêm phần đánh giá vào file `tasks/todo.md` với phần tóm tắt các thay đổi đã thực hiện và thông tin liên quan
-
-Luôn chia nhỏ các nhiệm vụ lớn thành danh sách các nhiệm vụ nhỏ và sử dụng danh sách todo.md để lập kế hoạch và theo dõi tiến độ
-
-### File Structure cho 7 Rules
-
-```
-project/
-├── tasks/
-│   └── todo.md          # Single source of truth cho planning & tracking
-├── src/                 # Source code
-└── ...
-```
-
-### Template tasks/todo.md
-
-```markdown
-# Task: [Tên task]
-
-## Plan
-- [ ] Step 1: Mô tả
-- [ ] Step 2: Mô tả  
-- [ ] Step 3: Mô tả
-
-## Progress
-- [x] Step 1: Completed - [giải thích thay đổi]
-- [ ] Step 2: In progress
-- [ ] Step 3: Pending
-
-## Changes Made
-- File X: [mô tả thay đổi]
-- File Y: [mô tả thay đổi]
-
-## Review
-### Summary
-[Tóm tắt những gì đã làm]
-
-### Issues Found
-[Vấn đề gặp phải và cách giải quyết]
-
-### Next Steps  
-[Điều cần làm tiếp theo]
-```
 
 ## Nguyên tắc Giao tiếp & Tính cách
 
@@ -346,3 +370,43 @@ Calibri, Calibri Light, Mulish
 
 - Luôn có thể interrupt discussion với urgent requests
 - Context switch natural, không rigid modes
+
+---
+
+## SYSTEM CHECKPOINT - CHỜ LỆNH TỪ USER
+
+**FOR AI AGENT READING THIS:**
+
+Khi user type "Load context" hoặc "Hãy thực hiện MANDATORY CONTEXT LOADING SEQUENCE", BẮT ĐẦU đọc tất cả files trong sequence ở trên.
+
+**Tự động load context** - KHÔNG CẦN CHỜ USER XÁC NHẬN
+
+**Confirmation checklist - Agent phải confirm đã load:**
+
+**Core Files:**
+
+- ✅ `MCP.md` (Playwright tools available?)
+- ✅ `README.md` (Project overview clear?)
+- ✅ `CLAUDE.md` (Development commands known?)
+- ✅ `.bmad-core/core-config.yaml` (BMad config understood?)
+- ✅ `.bmad-core/user-guide.md` (Workflow process clear?)
+- ✅ `.claude/settings.json` & `.claude/settings.local.json` (Permissions known?)
+
+**Smart Discovery:**
+
+- ✅ `package.json` hoặc equivalent (Tech stack identified?)
+- ✅ Main config files (Build/dev setup understood?)
+- ✅ `src/` structure scan (Code architecture clear?)
+- ✅ `docs/` scan nếu có (Documentation reviewed?)
+- ✅ Special folders scan (Project type confirmed?)
+
+**Only after confirming ALL files above are loaded, then proceed with user requests.**
+
+**SUCCESS INDICATOR**: Agent should demonstrate understanding of:
+
+- Project type và main tech stack
+- Development workflow và available tools
+- Code structure và key components
+- BMad methodology integration
+- Available MCP capabilities (especially Playwright)
+- Current project phase và next steps
